@@ -1,0 +1,731 @@
+/**
+ * Development stylesheet.  Use this file for development purposes by adding this to your 'wp-config.php' file:
+ * define( 'SCRIPT_DEBUG', true );
+ * This allows you to build large-sized stylesheets with plenty notes and comments. Before releasing, compress
+ * this file and replace the compressed CSS in the 'style.css' file.
+ * @link http://www.cssdrive.com/index.php/main/csscompressor
+ */
+
+/* css reset. */
+/**
+ * SenCSS - Sensible Standards CSS framework
+ * Modified to validate (modification done by Nano8Blazex)
+ * Copyright (c) 2008-2010 Kilian Valkhof (kilianvalkhof.com)
+ * Visit sencss.kilianvalkhof.com for more information and changelogs.
+ * Licensed under the MIT license. http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+html,body,div,span,object,iframe,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,var,fieldset,form,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,menu,nav,section,time,mark,audio,video{margin:0;padding:0;vertical-align:baseline}article,aside,dialog,figure,footer,header,hgroup,menu,nav,section,time,mark,audio,video{display:block}body{background:#fff;color:#000;font:75%/1.5em Arial,Helvetica,"DejaVu Sans","Liberation sans","Bitstream Vera Sans",sans-serif;position:relative}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:''}:focus{outline:none}/* Baseline and common looks - Sets a vertical rhythm and styles the different elements. */a{text-decoration:underline;border:0}a:hover,a:focus{text-decoration:none}a img{border:0}abbr,acronym{font-variant:small-caps}address,cite,em,i{font-style:italic}blockquote p{margin:0 1.5em 1.5em;padding:0.75em}code,kbd,tt{font-family:"Courier New",Courier,monospace,serif;line-height:1}del{text-decoration:line-through}dfn{border-bottom:1px dashed;font-style:italic}dl{margin:0 0 1.5em}dt{font-weight:800}dd{margin-left:1.5em}h1,h2,h3,h4,h5,h6{padding:0}h1{font-size:2em;margin:0 0 0.75em}h2{font-size:1.5em;margin:0 0 1em}h3{font-size:1.1666em;margin:0 0 1.286em}h4{font-size:1em;margin:0 0 1.5em}h5{font-size:0.8333em;margin:0 0 1.8em}h6{font-size:0.666em;margin:0 0 2.25em}img{display:inline-block;vertical-align:text-bottom}ins{text-decoration:overline}mark{background-color:#ff9;color:#000;font-style:italic}ol{list-style:outside decimal}p{margin:0 0 1.5em}pre{font-family:"Courier New",Courier,monospace,serif;margin:0 0 1.5em}sub{top:0.4em;font-size:0.85em;line-height:1;position:relative;vertical-align:baseline}sup{font-size:0.85em;line-height:1;position:relative;bottom:0.5em;vertical-align:baseline}strong,b{font-weight:500}ul{list-style:outside disc}ul,ol{margin:0 0 1.5em 1.5em;padding:0}li ul,li ol{padding:0;margin:0 0 1.5em 1.5em}table{border-collapse:collapse;border-spacing:0;margin:0 0 1.5em;padding:0}caption{font-style:italic;text-align:left}tr.alt td{background:#eee}td{border:1px solid #000;padding:0.333em;vertical-align:middle}th{padding:0.333em;vertical-align:middle}button{cursor:pointer;display:block;font-size:1em;height:2em;line-height:1.5em;margin:0.8em 0 0;padding:0 0.5em;position:relative}fieldset{border:0;margin:0 0 1.5em;position:relative;padding:1.5em 0 0}fieldset fieldset{clear:both;margin:0 0 0.75em;padding:0 0 0 1.5em}textarea{border:1px solid #ccc;border-bottom-color:#eee;border-right-color:#eee;box-sizing:border-box;width:100%;margin:0;padding:.29em 0}select{border:1px solid #ccc;border-bottom-color:#eee;border-right-color:#eee;font-size:1em;line-height:1.5em;margin-bottom:0.75em;padding:0.25em;height:2.25em}optgroup{font-style:normal;text-indent:0.2em}optgroup+optgroup{margin-top:1em}option{font-size:1em;height:1.5em;padding:0;text-indent:1em}label{cursor:pointer;height:1.5em;margin:0;padding:0;width:100%}label input{position:relative;background:0;border:0;height:1em;line-height:1.5em;margin:0 0.5em 0 0;padding:0;width:auto}input{position:relative}legend{font-size:1.1666em;left:0;margin:0;padding:0}/* =Reset default browser CSS. Based on work by Eric Meyer:http://meyerweb.com/eric/tools/css/reset/index.html,with some modifications by Nano8Blazex 05-25-2011-------------------------------------------------------------- */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:transparent;margin:0;padding:0;vertical-align:baseline;position:relative}body{line-height:1;font-size:1em;font-family:"Helvetica Neue",Arial,sans-serif}h1,h2,h3,h4,h5,h6{clear:both;font-weight:normal}ol,ul{margin-left:20px}blockquote{quotes:none}blockquote:before,blockquote:after{content:'';content:none}del{text-decoration:line-through}/* tables still need 'cellspacing="0"' in the markup */table{border-collapse:collapse;border-spacing:0}a img{border:none}
+
+
+
+/* NANO8BLAZEX - The Cardinal Wordpress Theme */
+/* global positioning */
+
+body {
+	background-color: #FAFAFA;
+	color: #FAFAFA;
+	line-height: 1.2em;
+	font-family: Helvetica, Arial ,sans-serif;
+}
+
+#container {
+	width: 900px;
+	margin: 0px auto;
+	padding: 50px; /*total width of 1000px */
+}
+
+#header {
+	height: 120px;
+	margin-bottom: 10px;
+}
+
+div.left-side-reck,
+div.right-side-reck {
+	position: absolute;
+}
+
+div.left-side-reck {
+	width: 640px;
+	top: 0px; left: 0px;
+}
+
+div.right-side-reck {
+	width: 250px;
+	top: 0px; right: 0px;
+}
+
+.box { /* class box means that the item is an individual box on the screen */
+	-webkit-box-shadow: 1px 1px 1px #ccc;
+}
+
+a.blocky-link {
+	position: relative;
+	display: block;
+	width: 100%; height: 100%;
+}
+
+a {
+	cursor:pointer;
+}
+
+.expanded a.space-filler {
+	cursor: default;
+}
+
+.clear {
+	clear: both;
+	height: 1px; width: 100%;
+}
+
+.space-filler {
+	position: absolute;
+	top: 0; left: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+/* hiding and selecting elements */
+
+.hidden {
+	display: none;
+}
+
+.selected {
+	display: inherit;
+}
+
+/* text formatting */
+
+.century-gothic, 
+.link-arrow, 
+.post-title,
+h2,
+ul#super-post-navigation,
+.super-post-title {
+	font-family: "Century Gothic" ,sans-serif;
+	font-size: 0.813em;
+	line-height: 1.04em;
+}
+
+.century-gothic.emphasized, 
+.link-arrow,
+h2,
+.super-post-title {
+	line-height: 1.125em;
+	font-size: 0.938em;
+	font-weight: bold;
+}
+
+body #container span.link-arrow {
+	font-size: 1.125em;
+	line-height: 1.125em;
+	font-weight: bold;
+	display: inline;
+	margin-left: 5px;
+	top: 1px;
+}
+
+/* header positioning */
+
+#header a {
+	text-decoration: none;
+}
+
+#home-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+div#identity-container {
+	min-height: 100%;
+}
+
+div#identity-information-container {
+	min-height: 100%;
+	background-color: #C9202E;
+}
+
+img#logo {
+	position: absolute;
+	top:0px; right: 0px;
+}
+
+div#shadow-maker {
+	height: 120px;
+	width: 499px;
+	position: absolute;
+	top:0px; right: 0px;
+}
+
+img#bell-logo {
+	position: absolute;
+	top:0px; left: 0px;
+}
+
+span#identity-information-text {
+	position: absolute; 
+	left: 115px; top: 26px; width: 120px;
+	text-decoration: none;
+	color: #FAFAFA;
+}
+
+span#identity-information-text span {
+	display: block;
+	margin-bottom: 6px;
+}
+
+#about-link-arrow {
+	color: #F8AEB0;
+}
+
+/* content positioning */
+
+#main {
+}
+
+#main a {
+	text-decoration: none;
+	color: #FAFAFA; 
+}
+
+#main a:hover {
+	text-decoration: underline;
+}
+
+/* content */
+
+div#content {
+	padding-bottom: 50px;
+}
+
+.post {
+	margin-bottom: 10px;
+	padding: 10px;
+	padding-right: 20px; /*for the legitimate padding-bottom see .clear */
+	padding-bottom: 9px;
+	background-color: #1A5289;
+}
+
+.post.post-odd {
+	background-color: #1A5289;
+}
+
+.post.post-even {
+	background-color: #7585BA;
+}
+
+.post .thumbnail {
+	float: left;
+	width: 250px; height: 250px;
+	padding: 10px;
+	background-color: #965DA6;
+	margin-top: -10px; margin-left: -10px;
+	margin-right: 15px;
+}
+
+.post .post-title {
+	clear: none;
+	margin-top: 3px;
+	margin-bottom: 18px;
+}
+
+.post .post-title a {
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+.text {
+	font-family: "Junction", sans-serif;
+	font-size: 0.75em;
+	line-height: 1.2em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0.938em;
+	-webkit-column-fill: balance;
+	text-align: justify;
+	text-indent: 1.5em;
+}
+
+div.byline {
+	width: 100%;
+	text-indent: 0;
+	text-align: left;
+	border-bottom: 1px solid #F2F2F2;
+	margin-bottom: 10px;
+	font-family: "Gill Sans", "Junction", sans-serif;
+	padding-bottom: 3px;
+	/*font-size: 1.083em;
+	line-height: 1.26em;*/
+	/*top: -3px; */ /*for aesthetic purposes when you look at it, that's all */
+}
+
+div.byline .author {
+}
+
+div.byline .published-date {
+	text-decoration: none;
+	font-style: italic;
+	font-weight: 400;
+}
+
+div.byline .category {
+	font-weight: 600;
+}
+
+.post .clear {
+	margin-bottom: -11px; /* to account for padding and this thing's height (at bottom of each post) */
+	margin-top: 15px; /* add padding again! */
+}
+
+/* Front Page */
+
+div#super-post {
+	margin-bottom: 10px;
+	background-color: #1A5289;
+}
+
+#super-post #head {
+	background-color: #965DA6;
+}
+
+#super-post #accessories {
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+#super-post .text { /* see .text for text-formatting */
+	padding-right: 11px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	
+	-webkit-column-count: 3;
+	-webkit-column-gap: 0.938em;
+	-webkit-column-fill: balance;
+	text-align: justify;
+	text-indent: 1.5em;
+}
+
+#super-post .thumbnail-container { /* Entire top image section, before the clear, is 280px tall. */
+	width: 480px;
+	position: relative;
+	float: right;
+}
+
+#super-post .thumbnail {
+	width: 100%;
+	height: 260px;
+}
+
+#super-post .caption {
+	color: white;
+	padding: 5px 0px;
+	font-family: "Junction", sans-serif;
+	font-size: 0.688em;
+	line-height: 0.85em;
+	
+	display: block;
+	width:100%;
+	text-align: justify;
+}
+
+#super-post div#super-post-left-positioning {
+	margin-left: -20px;
+	margin-top: -10px;
+	margin-right: 490px; /* thumbnail width + 10px padding */
+}
+
+#super-post ul#super-post-navigation {
+	list-style: none;
+	margin-left: 0px;
+	font-size: 0.813em;
+	background: url("images/super-post-all-color.png") repeat-y top right;
+}
+
+#super-post ul#super-post-navigation li {
+	padding: 15px 10px;
+	color: #231F20;
+	text-align: right;
+}
+
+#super-post ul#super-post-navigation li:hover {
+	background-color: #DE9DE3;
+}
+
+#super-post ul#super-post-navigation li a {
+	display: block;
+	position: absolute;
+	top: 0px; left: 0px; width: 100%; height: 100%;
+}
+
+#super-post #sidebar-colors-top {
+	position: absolute;
+	top: 0px;
+	left: 0px; right: 0px;
+	bottom: 10px;
+	background: url("images/super-post-color.png") repeat-y top right;
+}
+
+#super-post #sidebar-colors-bottom {
+	position: absolute;
+	height: 10px;
+	left: 0px; right: 0px;
+	bottom: 0px;
+	background: url("images/super-post-color-bottom.png") top right repeat-y;
+}
+
+#super-post .clear {
+	height: 0px;
+	margin-top: -1px;
+}
+
+#super-post h2.super-post-title {
+	padding: 5px 10px;
+	font-size: 1.875em;
+	line-height: 1.4em;
+	text-align: right;
+	background-color: #965DA6;
+}
+
+/* list deco */
+
+#super-post li.li1 {
+	background-color: #87CDD4;
+}
+
+#super-post li.li2 {
+	margin-left: 30px;
+	background-color: #EBA51A;
+}
+
+#super-post li.li3 {
+	background-color: #D95959;
+}
+
+#super-post li.li4 {
+	margin-left: 60px;
+	background-color: #43A161;
+}
+
+#super-post li.li5 {
+	margin-left: 30px;
+	background-color: #FADB7D;
+}
+
+#super-post li.li6 {
+}
+
+#super-post li.selected {
+	background-color: #965DA6;
+}
+
+#super-post ul#super-post-navigation li.selected:hover {
+	background-color: #965DA6;
+}
+
+/* CONTENT comic item */
+#comic {
+	padding: 0px; margin: 0px; 
+	margin-bottom: 10px;
+}
+
+#comic img {
+	vertical-align: top;
+}
+
+/* CONTENT staff item */
+#staff {
+	padding: 0px; margin: 0px; 
+	margin-bottom: 10px;
+}
+
+#staff img {
+	vertical-align: top;
+}
+
+#staff p {
+	color: black;
+	font-family: "Junction", sans-serif;
+	font-size: 0.7em;
+	line-height: 1.3em;
+	text-align: justify;
+	
+	padding: 10px 0;
+}
+
+
+/* sidebar */
+
+.sidebar-padding {
+	height: 5px;
+}
+
+/* sidebar navigation */
+
+.sidebar-header h2 {
+	/* + Century Gothic, see top */
+	font-size: 1.125em;
+	line-height: 1.313em;
+}
+
+.sidebar-deco {
+	background-color: #712A81;
+}
+
+.sidebar-deco.sidebar-standout-deco {
+	background-color: #B272C1;
+}
+
+.sidebar-header {
+	padding: 5px 14px;
+	z-index: 1;
+}
+
+.sidebar-left {
+	position: absolute;
+	top: 0px; bottom: 0px;
+	width: 15px;
+	z-index: 1;
+}
+
+.sidebar-bottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 20px;
+	z-index: 0;
+}
+
+#sidebar .sidebar-data,
+#sidebar .sidebar-data li a {
+	color: #712A81;
+	font-family: "Junction", sans-serif;
+}
+
+#sidebar .sidebar-data {
+	margin-left: 15px;
+	list-style: none;
+}
+
+#sidebar .sidebar-data li a {
+	font-size: 0.875em;
+	line-height: 1em;
+}
+
+#sidebar .sidebar-data li {
+	padding: 15px;
+	border-bottom: 1px solid #DFBCDA;
+	border-top: 1px solid #EADFE9;
+}
+
+li.sidebar-selected-option {
+	border-left: solid 15px #BE8ABD;
+}
+
+li.sidebar-selected-option.sidebar-standout-deco {
+	border-color: #D9B5E2;
+}
+
+#paper-archives,
+#browse-date,
+#browse-categories {
+	padding-bottom: 20px; /* to accommadate sidebar-bottom */
+	margin-bottom: 5px;
+	/*overflow: hidden;*/
+}
+
+#paper-archives.collapsed,
+#browse-date.collapsed,
+#browse-categories.collapsed {
+	padding-bottom: 0px; /* to accommadate a nonexistant sidebar-bottom */
+}
+
+.collapsed .sidebar-data,
+.collapsed .sidebar-left,
+.collapsed .sidebar-bottom {
+	display: none;
+}
+
+
+
+/* RECRUIT Sidebar item */
+
+#recruit {
+	background: black;
+	margin-bottom: 10px;
+}
+
+#recruit #recruit-p1 {
+	font-size: 1em;
+	line-height: 1.2em;
+	padding: 10px 20px 5px 0px;
+}
+
+#recruit #recruit-p2 {
+	background: white;
+	color: black;
+	margin-right: 10px;
+
+	font-size: 1.25em;
+	line-height: 1.0em;
+	padding: 5px 0px 7px 0px;
+}
+
+#recruit #recruit-p3 {
+	color: #8CBFE0;
+	
+	font-size: 1.125em;
+	line-height: 1.2em;
+	padding: 5px 10px 15px 0px;
+}
+
+#recruit #recruit-p3 a {
+	color: #8CBFE0;
+}
+
+body #container #recruit span.link-arrow {
+	color: #8CBFE0;
+	position: relative;
+	top: 0px;
+	margin-left: 0px;
+}
+
+
+/* REPORT sidebar item */
+
+#report {
+	color: black;
+	margin-bottom: 10px;
+}
+
+#report #report-p1 {
+	font-size: 1.563em;
+	line-height: 1.2em;
+	padding: 0px 0px 0px 0px;
+	
+	margin-top: -5px;
+}
+
+#report #report-p2 {
+	color: #8CBFE0;
+	
+	font-size: 1.125em;
+	line-height: 1.2em;
+	padding: 5px 10px 0px 0px;
+}
+
+#report #report-p2 a {
+	color: #8CBFE0;
+}
+
+body #container #report span.link-arrow {
+	color: #8CBFE0;
+	position: relative;
+	top: 0px;
+	margin-left: 0px;
+}
+
+
+/* MOST READ sidebar item */
+
+#most-read {
+	background: black;
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+#most-read #most-read-p1 {
+	font-size: 1.313em;
+	line-height: 1.2em;
+	padding: 5px 0px 10px 0px;
+}
+
+#most-read #most-read-p2 {
+	font-family: "Junction", sans-serif;
+	font-size: 0.75em;
+	line-height: 1.2em;
+}
+
+#most-read #most-read-p2 p {
+	padding: 6px 10px 6px 0px;
+}
+
+#most-read #most-read-p2 a:hover {
+	text-decoration: none;
+	color: #8CBFE0;
+}
+
+body #container #most-read span.link-arrow {
+	color: #8CBFE0;
+	position: relative;
+	top: 0px;
+	margin-left: 4px;
+}
+
+/* BROWSE sidebar item */
+
+#browse {
+	background: #871626;
+	margin-bottom: 10px;
+	height: 250px; /* fixed height: square */
+}
+
+#browse span#browse-p1 {
+	/* fill link */
+	position: absolute; top: 0; left: 0;
+	display: block;
+	width: 250px;
+	height: 250px;
+	
+	background: url('images/browse-bg.png')  bottom right no-repeat;
+}
+
+#browse #browse-p2 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: 1.75em;
+	line-height: 1.2em;
+	margin-right: 15px; margin-bottom: 13px;
+}
+
+#browse #browse-p2 a:hover {
+	text-decoration: none;
+}
+
+/* CONTACT sidebar item - almost same as BROWSE, modify both at the same time please*/
+
+#contact {
+	background: #7F2A7F;
+	margin-bottom: 10px;
+	height: 250px; /* fixed height: square */
+}
+
+#contact span#contact-p1 {
+	/* fill link */
+	position: absolute; top: 0; left: 0;
+	display: block;
+	width: 250px;
+	height: 250px;
+	
+	background: url('images/contact-bg.png')  bottom right no-repeat;
+}
+
+#contact #contact-p2 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	font-size: 1.75em;
+	line-height: 1.2em;
+	margin-right: 15px; margin-bottom: 13px;
+}
+
+#contact #contact-p2 a:hover {
+	text-decoration: none;
+}
+
